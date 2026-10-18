@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  /* BayouDry palette — deep sea slate, ember CTA, aqua accent.
+     Token names inherited from the playbook build; values redefined. */
+  --color-pine: #0f2b3d;
+  --color-pine-deep: #0a1e2b;
+  --color-pine-soft: #1b4257;
+
+  --color-coral: #e05a1f;
+  --color-coral-dark: #b8480f;
+  --color-coral-tint: #fdeee2;
+
+  --color-lagoon: #0a93b8;
+  --color-lagoon-deep: #076e89;
+  --color-lagoon-tint: #e2f3f9;
+
+  --color-gold: #c9a227;
+  --color-gold-tint: #faf3df;
+
+  --color-alert: #b42318;
+  --color-alert-tint: #fdecea;
+
+  --color-paper: #f7f5f0;
+  --color-paper-deep: #ede8dd;
+  --color-line: #d9d0c0;
+
+  --color-sage: #4f6b5b;
+
+  --font-serif: "Space Grotesk", "Inter", ui-sans-serif, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-pine font-sans antialiased;
+  }
+  /* Defer below-the-fold layout on long pages (not the homepage — see playbook) */
+  main > section:nth-of-type(n + 4),
+  main > div:nth-of-type(n + 4) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 800px;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-lagoon-deep;
+  }
+  .eyebrow-light {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-coral;
+  }
+  .btn {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 whitespace-nowrap rounded-md px-6 text-base font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 whitespace-nowrap rounded-md px-6 text-base font-semibold transition-colors bg-coral text-white hover:bg-coral-dark;
+  }
+  .btn-secondary {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 whitespace-nowrap rounded-md px-6 text-base font-semibold transition-colors bg-pine text-white hover:bg-pine-soft;
+  }
+  .btn-outline-light {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 whitespace-nowrap rounded-md px-6 text-base font-semibold transition-colors border-2 border-white/70 text-white hover:border-white hover:bg-white/10;
+  }
+  .btn-alert {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 whitespace-nowrap rounded-md px-6 text-base font-semibold transition-colors bg-alert text-white hover:bg-red-800;
+  }
+  .btn-ghost-light {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 whitespace-nowrap rounded-md px-6 text-base font-semibold transition-colors text-white hover:bg-white/10;
+  }
+  .link {
+    @apply text-lagoon-deep underline decoration-lagoon/40 underline-offset-2 hover:decoration-lagoon-deep;
+  }
+  .answer-box {
+    @apply rounded-2xl border-l-4 border-coral bg-coral-tint p-5 text-[1.05rem] leading-relaxed;
+  }
+  .field {
+    @apply w-full rounded-md border border-line bg-white px-4 py-3 text-base text-pine placeholder:text-pine/40 focus:border-lagoon focus:outline-none focus:ring-2 focus:ring-lagoon/30;
+  }
+  .field-label {
+    @apply mb-1.5 block text-sm font-semibold text-pine;
+  }
+  .card {
+    @apply rounded-2xl bg-white ring-1 ring-line;
+  }
+  .prose-bw {
+    @apply text-[1.05rem] leading-relaxed text-pine/90;
+  }
+  .prose-bw > p + p {
+    @apply mt-4;
+  }
+  .prose-bw ul {
+    @apply mt-4 list-disc space-y-2 pl-6;
+  }
+  .prose-bw ol {
+    @apply mt-4 list-decimal space-y-2 pl-6;
+  }
+  .prose-bw h2 {
+    @apply mt-10 font-serif text-2xl font-semibold text-pine;
+  }
+  .prose-bw h3 {
+    @apply mt-8 text-xl font-semibold text-pine;
+  }
+}

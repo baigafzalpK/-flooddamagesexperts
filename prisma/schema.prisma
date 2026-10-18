@@ -1,0 +1,106 @@
+// Future DB/CMS model — mirrors src/content/types.ts.
+// Not wired yet; leads go to webhook → DB → dev file (see src/lib/lead/store.ts).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Status {
+  DRAFT
+  REVIEW
+  PUBLISHED
+  NOINDEX
+  ARCHIVED
+}
+
+model Service {
+  slug            String   @id
+  name            String
+  category        String
+  status          Status   @default(DRAFT)
+  seoTitle        String
+  metaDescription String
+  h1              String
+  answer          String
+  intro           Json
+  signs           Json
+  process         Json
+  costFactors     Json
+  diy             Json?
+  faqs            Json
+  related         Json
+  timelineOptions Json
+  photo           String?
+  updated         DateTime
+}
+
+model City {
+  slug            String  @id
+  stateSlug       String
+  county          String
+  status          Status  @default(DRAFT)
+  zips            Json
+  areas           Json
+  intro           Json
+  housingNotes    Json
+  localIssues     Json
+  popularServices Json
+  nearby          Json
+  faqs            Json
+  updated         DateTime
+}
+
+model CityService {
+  citySlug    String
+  serviceSlug String
+  status      Status @default(DRAFT)
+  localAngle  Json
+  localFaqs   Json
+  updated     DateTime
+
+  @@id([citySlug, serviceSlug])
+}
+
+model Article {
+  slug            String   @id
+  title           String
+  category        String
+  status          Status   @default(DRAFT)
+  seoTitle        String
+  metaDescription String
+  answer          String
+  sections        Json
+  services        Json
+  relatedArticles Json
+  editorialNote   String?
+  photo           String?
+  published       DateTime
+  updated         DateTime
+  reviewedBy      String?
+}
+
+model Lead {
+  id            String   @id @default(cuid())
+  service       String
+  timeline      String
+  zip           String
+  name          String
+  phone         String
+  email         String?
+  contactMethod String   @default("call")
+  notes         String?
+  consent       Boolean
+  utmSource     String?
+  utmMedium     String?
+  utmCampaign   String?
+  gclid         String?
+  landingPage   String?
+  ipHash        String
+  userAgent     String?
+  receivedAt    DateTime @default(now())
+}
