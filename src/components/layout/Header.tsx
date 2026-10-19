@@ -176,7 +176,7 @@ export function Header() {
         }`}
       >
         <div className="container-x relative flex items-center py-3">
-          <Link href={routes.home()} aria-label="BayouDry Restoration — home" onClick={closeNow}>
+          <Link href={routes.home()} aria-label="Flood Damages Experts — home" onClick={closeNow}>
             <Logo className="h-11 w-auto" />
           </Link>
 

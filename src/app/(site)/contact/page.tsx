@@ -10,9 +10,9 @@ import { pageGraph } from "@/lib/schema";
 import { IconPhone, IconClock } from "@/components/icons";
 
 const meta = pageMeta({
-  title: "Contact BayouDry Restoration",
+  title: "Contact Flood Damages Experts",
   description:
-    "Contact BayouDry Restoration in Greater Houston, TX — request help with water damage, ask about a situation, or reach us about anything else.",
+    "Contact Flood Damages Experts — request help with water and flood damage, ask about a situation, or reach us 24/7.",
   path: routes.contact(),
   ogImageKey: "contact",
 });
@@ -46,7 +46,7 @@ export default function ContactPage() {
             Talk to us
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-white/85">
-            Questions about water damage, a request, or how BayouDry works — call
+            Questions about water damage, a request, or how Flood Damages Experts works — call
             or send a request and we&apos;ll get back to you.
           </p>
         </div>

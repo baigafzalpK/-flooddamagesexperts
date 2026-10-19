@@ -26,7 +26,7 @@ export async function generateMetadata({
   const info = allStateInfos.find((s) => s.slug === slug);
   if (!info) return {};
   const meta = pageMeta({
-    title: `Water Damage Restoration in ${info.name} | BayouDry`,
+    title: `Water Damage Restoration in ${info.name} | Flood Damages Experts`,
     description: `Water damage restoration across ${info.name}: how housing, climate and flood risk shape the work, plus the cities contractors cover.`,
     path: routes.state(slug),
     ogImageKey: `state-${slug}`,
@@ -56,7 +56,7 @@ export default async function StatePage({
         data={pageGraph({
           path: routes.state(slug),
           type: "CollectionPage",
-          name: `Water Damage Restoration in ${info.name} | BayouDry`,
+          name: `Water Damage Restoration in ${info.name} | Flood Damages Experts`,
           description: info.intro[0] ?? "",
           breadcrumbs: [
             { name: "Home", path: routes.home() },

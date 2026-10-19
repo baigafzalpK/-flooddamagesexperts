@@ -12,7 +12,7 @@ import { pageGraph } from "@/lib/schema";
 const meta = pageMeta({
   title: "Frequently Asked Questions",
   description:
-    "How BayouDry Restoration works, what to expect from a contractor, quotes, insurance and drying timelines — answers to common water damage questions in Houston.",
+    "How Flood Damages Experts works, what to expect from a contractor, quotes, insurance and drying timelines — answers to common water damage questions.",
   path: routes.faq(),
   ogImageKey: "faq",
 });
@@ -47,7 +47,7 @@ export default function FaqPage() {
             Frequently asked questions
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-white/85">
-            How BayouDry works, what to expect from a contractor, and the
+            How Flood Damages Experts works, what to expect from a contractor, and the
             practical stuff — quotes, drying time, insurance claims.
           </p>
         </div>

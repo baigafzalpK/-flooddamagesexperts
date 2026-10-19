@@ -9,7 +9,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { pageGraph } from "@/lib/schema";
 
 const meta = pageMeta({
-  title: "Water Damage Restoration Services in Houston, TX | BayouDry",
+  title: "Water Damage Restoration Services | Flood Damages Experts",
   description:
     "Water damage restoration services across Greater Houston. Browse what restoration contractors do — extraction, drying, repairs — and what affects the scope of the work.",
   path: routes.services(),

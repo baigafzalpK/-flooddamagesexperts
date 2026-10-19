@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const meta = pageMeta({
   title: "Terms of Service",
-  description: "The terms for using BayouDry Restoration's website and help-request service.",
+  description: "The terms for using Flood Damages Experts's website and help-request service.",
   path: routes.terms(),
 });
 

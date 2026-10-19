@@ -42,7 +42,7 @@ export function CityTemplate({ city }: { city: City }) {
         data={pageGraph({
           path: routes.city("texas", city.slug),
           type: "ItemPage",
-          name: `Water Damage Restoration in ${label} | BayouDry`,
+          name: `Water Damage Restoration in ${label} | Flood Damages Experts`,
           description: `Water damage restoration in ${label}: local notes on housing and what contractors see most, plus clear written plans from independent licensed contractors.`,
           breadcrumbs: [
             { name: "Home", path: routes.home() },

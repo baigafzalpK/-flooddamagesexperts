@@ -11,7 +11,7 @@ import { pageGraph } from "@/lib/schema";
 const meta = pageMeta({
   title: "Water Damage Guides & Resources",
   description:
-    "Plain-English guides to water damage: what to do when pipes burst, dealing with floods, mold prevention, insurance claims and more — from BayouDry Restoration.",
+    "Plain-English guides to water damage: what to do when pipes burst, dealing with floods, mold prevention, insurance claims and more — from Flood Damages Experts.",
   path: routes.resources(),
   ogImageKey: "resources",
 });

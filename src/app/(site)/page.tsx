@@ -49,9 +49,9 @@ const POPULAR_METROS = [
 ];
 
 const meta = pageMeta({
-  title: "Water Damage Restoration in Houston, TX",
+  title: "Water Damage & Flood Restoration | Flood Damages Experts",
   description:
-    "Water damage restoration in Houston, TX: emergency water extraction, flood cleanup, and structural drying. BayouDry connects you with an independent local restoration contractor — call now.",
+    "Water damage restoration: emergency water extraction, flood cleanup, and structural drying. Flood Damages Experts connects you with an independent local restoration contractor — call now.",
   path: routes.home(),
   ogImageKey: "home",
 });
@@ -133,7 +133,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-white/85">
               Shut off the water at the main valve. Cut power to the wet rooms.
-              Then call — BayouDry connects you with an independent water-damage
+              Then call — Flood Damages Experts connects you with an independent water-damage
               restoration contractor who can extract the water and
               start structural drying before mold takes hold.
             </p>
@@ -197,7 +197,7 @@ export default function HomePage() {
             <strong className="font-bold">Our promise:</strong> {BRAND_PROMISE}
           </p>
           <Link href={routes.about()} className="inline-flex shrink-0 items-center gap-1 font-semibold text-lagoon-deep hover:underline">
-            How BayouDry works <IconArrowRight className="h-4 w-4" />
+            How Flood Damages Experts works <IconArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>

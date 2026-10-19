@@ -13,42 +13,42 @@ export function Logo({
   const sub = light ? "#e05a1f" : "#076e89";
   return (
     <svg
-      viewBox="0 0 230 56"
+      viewBox="0 0 280 56"
       className={className}
       role="img"
-      aria-label="BayouDry Restoration"
+      aria-label="Flood Damages Experts"
     >
       <path
-        d="M14 4 C 14 4, 6 14, 6 20 a8 8 0 0 0 16 0 C 22 14, 14 4, 14 4 Z"
+        d="M14 6 C 14 6, 6 16, 6 22 a8 8 0 0 0 16 0 C 22 16, 14 6, 14 6 Z"
         fill="#0a93b8"
       />
       <text
         x="30"
-        y="30"
+        y="28"
         fontFamily="'Space Grotesk', 'Inter', sans-serif"
         fontWeight="700"
-        fontSize="29"
+        fontSize="24"
         fill={word}
       >
-        BayouDry
+        FloodDamages
       </text>
       <path
-        d="M34 38 C 80 32, 130 32, 168 38 S 200 44, 214 36"
+        d="M32 35 C 80 32, 130 32, 180 35 S 220 38, 235 34"
         stroke="#e05a1f"
-        strokeWidth="4"
+        strokeWidth="3.5"
         strokeLinecap="round"
         fill="none"
       />
       <text
         x="32"
-        y="52"
+        y="48"
         fontFamily="'Inter', sans-serif"
-        fontWeight="600"
-        fontSize="10"
+        fontWeight="700"
+        fontSize="11"
         letterSpacing="4"
         fill={sub}
       >
-        RESTORATION
+        EXPERTS
       </text>
     </svg>
   );

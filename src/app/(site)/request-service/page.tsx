@@ -7,7 +7,7 @@ import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 import { CheckItem } from "@/components/ui";
 
 const meta = pageMeta({
-  title: "Request Water Damage Restoration Help | BayouDry",
+  title: "Request Water Damage Restoration Help | Flood Damages Experts",
   description: "Request water damage restoration help in Greater Houston. Two minutes — an independent restoration contractor follows up.",
   path: "/request-service/",
   noindex: true,

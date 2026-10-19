@@ -50,7 +50,7 @@ export function Reviews() {
         <div className="container-x py-16 text-center">
           <SectionHeading
             eyebrow="Reviews"
-            title="Recently worked with a contractor through BayouDry?"
+            title="Recently worked with a contractor through Flood Damages Experts?"
             lede="Your review helps neighbors choose with confidence."
             align="center"
           />

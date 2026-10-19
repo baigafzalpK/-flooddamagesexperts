@@ -23,9 +23,9 @@ const sans = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "BayouDry Restoration | Water Damage Restoration in Houston, TX",
+  title: "Flood Damages Experts | Water & Flood Damage Restoration",
   description:
-    "BayouDry Restoration connects Greater Houston property owners with independent licensed water-damage restoration contractors. Fast help for floods, leaks, and storm damage — request assistance now.",
+    "Flood Damages Experts connects property owners nationwide with independent licensed water-damage restoration contractors. Fast help for floods, leaks, and storm damage — request assistance now.",
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },

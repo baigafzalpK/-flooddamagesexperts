@@ -40,7 +40,7 @@ export async function generateMetadata({
   const bulk = isBulkCity(state, slug);
   const label = bulk ? bulkLabel(city) : cityLabel(city);
   const meta = pageMeta({
-    title: `Water Damage Restoration in ${label} | BayouDry`,
+    title: `Water Damage Restoration in ${label} | Flood Damages Experts`,
     description: bulk
       ? `Water damage restoration in ${label}: local contractors serving ${city.zipCount} ZIP codes. Fast extraction, thorough drying, clear written plan.`
       : `Water damage restoration in ${label}: local notes on housing and what contractors see most. Clear written plans from independent licensed contractors.`,

@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const meta = pageMeta({
   title: "Privacy Policy",
-  description: "How BayouDry Restoration collects, uses and shares your information when you request help or browse the site.",
+  description: "How Flood Damages Experts collects, uses and shares your information when you request help or browse the site.",
   path: routes.privacy(),
 });
 

@@ -24,7 +24,7 @@ export default function robots(): MetadataRoute.Robots {
           disallow: ["/api/", "/thank-you/", ...disallowParams.map((p) => `/*?*${p}*`)],
         },
       ],
-      sitemap: "https://bayoudry.com/sitemap.xml",
+      sitemap: "https://flooddamagesexperts.com/sitemap.xml",
     };
   }
   return {

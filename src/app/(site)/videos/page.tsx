@@ -11,7 +11,7 @@ import { pageGraph } from "@/lib/schema";
 const meta = pageMeta({
   title: "Water Damage Videos — Tips & Explainers",
   description:
-    "Short videos from BayouDry Restoration: what to do in the first hour after water damage, how pros extract and dry, hidden moisture, and mold — plain-English explainers.",
+    "Short videos from Flood Damages Experts: what to do in the first hour after water damage, how pros extract and dry, hidden moisture, and mold — plain-English explainers.",
   path: routes.videos(),
   ogImageKey: "resources",
 });
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const VIDEOS = [
   {
     src: "/videos/bayoudry-brand-video-30s.mp4",
-    title: "BayouDry Restoration — what we do",
+    title: "Flood Damages Experts — what we do",
     body: "Water damage is stressful enough. Tell us what happened and we'll connect you with an independent local specialist for the next step.",
     duration: "0:30",
   },
@@ -123,7 +123,7 @@ export default function VideosPage() {
           </div>
           <p className="mt-8 text-center text-sm text-pine/55">
             Footage is AI-generated for illustration or licensed stock — not footage
-            of actual BayouDry jobs. BayouDry connects you with independent
+            of actual jobs. Flood Damages Experts connects you with independent
             restoration specialists; we don&apos;t perform the work ourselves.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">

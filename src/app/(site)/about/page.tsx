@@ -10,9 +10,9 @@ import { JsonLd } from "@/components/JsonLd";
 import { pageGraph } from "@/lib/schema";
 
 const meta = pageMeta({
-  title: "About BayouDry Restoration",
+  title: "About Flood Damages Experts",
   description:
-    "How BayouDry Restoration works: we connect Greater Houston property owners with independent water-damage restoration contractors. Fast answers, clear written plans.",
+    "How Flood Damages Experts works: we connect property owners with independent water & flood damage restoration contractors. Fast answers, clear written plans.",
   path: routes.about(),
   ogImageKey: "about",
 });
@@ -50,13 +50,12 @@ export default function AboutPage() {
 
       <div className="container-x max-w-3xl py-14">
         <div className="prose-bw">
-          <h2 className="!mt-0">What BayouDry is</h2>
+          <h2 className="!mt-0">What Flood Damages Experts is</h2>
           <p>
-            BayouDry Restoration is a connection service for property owners in
-            Greater Houston, Texas. When you request help, we match your
-            situation with an independent water-damage restoration contractor
-            who serves your area — and that contractor assesses the damage,
-            explains the plan in writing, and does the work.
+            Flood Damages Experts is a connection service for property owners.
+            When you request help, we match your situation with an independent
+            water-damage restoration contractor who serves your area — and that
+            contractor assesses the damage, explains the plan in writing, and does the work.
           </p>
           <p>
             We don&apos;t send our own crews, because we don&apos;t have any.
@@ -76,8 +75,8 @@ export default function AboutPage() {
           </p>
           <h2>How contractors join</h2>
           <p>
-            Contractors who take BayouDry requests are independent restoration
-            professionals serving Greater Houston. If you&apos;re a contractor
+            Contractors who take Flood Damages Experts requests are independent restoration
+            professionals serving nationwide and local communities. If you&apos;re a contractor
             interested in receiving requests,{" "}
             <Link href={routes.contact()} className="link">
               get in touch

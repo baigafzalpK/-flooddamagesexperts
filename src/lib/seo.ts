@@ -6,7 +6,7 @@ import { site } from "@/content/site";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://bayoudry.com";
+  "https://flooddamagesexperts.com";
 
 export interface PageMeta {
   title: string;

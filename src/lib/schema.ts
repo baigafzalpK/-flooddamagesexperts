@@ -26,7 +26,7 @@ export function siteGraph(cities: City[], services: Service[]) {
       alternateName: site.shortName,
       url: SITE_URL,
       description:
-        "BayouDry Restoration connects property owners in Greater Houston, Texas with independent licensed water-damage restoration contractors for emergency water extraction, flood cleanup, structural drying, and mold remediation.",
+        "Flood Damages Experts connects property owners with independent licensed water-damage restoration contractors for emergency water extraction, flood cleanup, structural drying, and mold remediation.",
       areaServed: cities.map((c) => ({
         "@type": "Place",
         name: cityLabel(c),

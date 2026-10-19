@@ -8,7 +8,7 @@ export default function LpLayout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-paper">
       <header className="border-b border-line bg-white">
         <div className="container-x flex items-center justify-between py-3">
-          <Link href={routes.home()} aria-label="BayouDry Restoration — home">
+          <Link href={routes.home()} aria-label="Flood Damages Experts — home">
             <Logo className="h-10 w-auto" />
           </Link>
           <a href={`tel:${site.phoneE164}`} className="btn-primary !min-h-[44px] !text-sm">

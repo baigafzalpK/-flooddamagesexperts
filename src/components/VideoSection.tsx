@@ -45,7 +45,7 @@ export function VideoSection() {
           </Link>
         </div>
         <p className="mt-6 text-center text-sm text-pine/55">
-          Stock footage for illustration — not a BayouDry job. Footage: Mixkit and
+          Stock footage for illustration — not a Flood Damages Experts job. Footage: Mixkit and
           Coverr, both under free commercial licenses.
         </p>
       </div>

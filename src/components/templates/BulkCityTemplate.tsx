@@ -42,7 +42,7 @@ export function BulkCityTemplate({ city }: { city: City }) {
         data={pageGraph({
           path,
           type: "ItemPage",
-          name: `Water Damage Restoration in ${label} | BayouDry`,
+          name: `Water Damage Restoration in ${label} | Flood Damages Experts`,
           description: `Water damage restoration in ${label}: local contractors serving ${city.zipCount} ZIP codes. Fast extraction, thorough drying, clear written plan.`,
           breadcrumbs: [
             { name: "Home", path: routes.home() },

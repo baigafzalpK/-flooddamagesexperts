@@ -12,9 +12,9 @@ import { pageGraph } from "@/lib/schema";
 import { IconMapPin } from "@/components/icons";
 
 const meta = pageMeta({
-  title: "Water Damage Restoration Across Greater Houston",
+  title: "Water & Flood Damage Restoration Service Areas | Flood Damages Experts",
   description:
-    "BayouDry Restoration connects Greater Houston property owners with independent water-damage restoration contractors in Houston, Pasadena, Katy, Sugar Land and 12 more cities. Check your ZIP.",
+    "Flood Damages Experts connects property owners with independent water-damage restoration contractors across 1,200+ cities in 43 states. Check your ZIP.",
   path: routes.locations(),
   ogImageKey: "locations",
 });
@@ -50,15 +50,14 @@ export default function LocationsHubPage() {
         <div className="container-x grid gap-10 py-14 lg:grid-cols-2">
           <div>
             <Breadcrumbs items={[{ name: "Home", href: routes.home() }, { name: "Service areas" }]} />
-            <p className="eyebrow-light mt-2">16 cities · Greater Houston</p>
+            <p className="eyebrow-light mt-2">1,200+ cities · Nationwide Coverage</p>
             <h1 className="mt-2 font-serif text-4xl font-semibold text-white text-balance sm:text-5xl">
               Where restoration contractors respond
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/85">
-              BayouDry is a service-area brand: independent water-damage
-              restoration contractors cover these towns. No offices, no trucks
-              with our name — just contractors where you are. Our home market
-              is Greater Houston.
+              Flood Damages Experts is a nationwide service-area brand: independent water-damage
+              restoration contractors cover these cities. No delay, fast dispatch — just vetted
+              specialists where you need them.
             </p>
           </div>
           <div className="card p-6 sm:p-8">

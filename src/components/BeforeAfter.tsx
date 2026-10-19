@@ -98,7 +98,7 @@ function Slider({
       </div>
       <figcaption className="p-4 text-sm text-pine/65">
         {caption}{" "}
-        <span className="italic">Illustrative example photos — not an actual BayouDry job.</span>
+        <span className="italic">Illustrative example photos — not an actual Flood Damages Experts job.</span>
       </figcaption>
     </figure>
   );
