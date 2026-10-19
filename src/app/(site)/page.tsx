@@ -23,7 +23,30 @@ import { Reviews } from "@/components/Reviews";
 import { JsonLd } from "@/components/JsonLd";
 import { pageGraph } from "@/lib/schema";
 import { SITE_URL } from "@/lib/seo";
-import { IconCheck, IconArrowRight } from "@/components/icons";
+import { IconCheck, IconArrowRight, IconClock, IconShield, IconMapPin } from "@/components/icons";
+
+const POPULAR_METROS = [
+  { name: "New York", state: "NY", stateSlug: "new-york", slug: "new-york" },
+  { name: "Los Angeles", state: "CA", stateSlug: "california", slug: "los-angeles" },
+  { name: "Dallas", state: "TX", stateSlug: "texas", slug: "dallas" },
+  { name: "Houston", state: "TX", stateSlug: "texas", slug: "houston" },
+  { name: "Miami", state: "FL", stateSlug: "florida", slug: "miami" },
+  { name: "Atlanta", state: "GA", stateSlug: "georgia", slug: "atlanta" },
+  { name: "Phoenix", state: "AZ", stateSlug: "arizona", slug: "phoenix" },
+  { name: "Philadelphia", state: "PA", stateSlug: "pennsylvania", slug: "philadelphia" },
+  { name: "San Antonio", state: "TX", stateSlug: "texas", slug: "san-antonio" },
+  { name: "San Diego", state: "CA", stateSlug: "california", slug: "san-diego" },
+  { name: "Austin", state: "TX", stateSlug: "texas", slug: "austin" },
+  { name: "Denver", state: "CO", stateSlug: "colorado", slug: "denver" },
+  { name: "Seattle", state: "WA", stateSlug: "washington", slug: "seattle" },
+  { name: "Charlotte", state: "NC", stateSlug: "north-carolina", slug: "charlotte" },
+  { name: "Las Vegas", state: "NV", stateSlug: "nevada", slug: "las-vegas" },
+  { name: "New Orleans", state: "LA", stateSlug: "louisiana", slug: "new-orleans" },
+  { name: "Tampa", state: "FL", stateSlug: "florida", slug: "tampa" },
+  { name: "Minneapolis", state: "MN", stateSlug: "minnesota", slug: "minneapolis" },
+  { name: "Pittsburgh", state: "PA", stateSlug: "pennsylvania", slug: "pittsburgh" },
+  { name: "Indianapolis", state: "IN", stateSlug: "indiana", slug: "indianapolis" },
+];
 
 const meta = pageMeta({
   title: "Water Damage Restoration in Houston, TX",
@@ -97,14 +120,21 @@ export default function HomePage() {
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-pine via-pine/92 to-pine/55" />
         <div className="container-x relative grid gap-10 py-16 lg:grid-cols-2 lg:py-24">
           <div>
-            <p className="eyebrow-light">Houston, Texas</p>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emerald-500/20 px-3.5 py-1.5 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40 backdrop-blur">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+              </span>
+              24/7 Live Emergency Dispatch Active · 1,200+ Cities Covered
+            </div>
+            <p className="eyebrow-light">Emergency Response</p>
             <h1 className="mt-3 font-serif text-4xl font-semibold text-white text-balance sm:text-5xl">
-              Water damage in your Houston home? Here&apos;s what to do right now
+              Water damage in your home? Here&apos;s what to do right now
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-white/85">
               Shut off the water at the main valve. Cut power to the wet rooms.
               Then call — BayouDry connects you with an independent water-damage
-              restoration contractor in Houston who can extract the water and
+              restoration contractor who can extract the water and
               start structural drying before mold takes hold.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -114,6 +144,17 @@ export default function HomePage() {
               <a href={`tel:${site.phoneE164}`} className="btn-outline-light">
                 Call {site.phoneDisplay}
               </a>
+            </div>
+            <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-white/80">
+              <span className="inline-flex items-center gap-1.5">
+                <IconClock className="h-4 w-4 text-coral" /> &lt; 60 Min Dispatch
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <IconShield className="h-4 w-4 text-coral" /> Direct Insurance Billing
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <IconMapPin className="h-4 w-4 text-coral" /> 1,200+ Cities Nationwide
+              </span>
             </div>
             <dl className="mt-10 grid grid-cols-3 gap-4 border-t border-white/15 pt-6 text-white">
               <div>
@@ -261,8 +302,8 @@ export default function HomePage() {
         <div className="container-x grid gap-10 py-16 lg:grid-cols-2">
           <div>
             <SectionHeading
-              eyebrow="Service area"
-              title="16 cities across Greater Houston"
+              eyebrow="Local Service Area"
+              title="Greater Houston &amp; Regional Hub"
               lede="Independent restoration contractors cover Houston and the surrounding communities. Pick your city for local notes on what contractors see most there."
             />
             <div className="mt-6 flex flex-wrap gap-2">
@@ -273,15 +314,73 @@ export default function HomePage() {
               ))}
             </div>
             <Link href={routes.locations()} className="link mt-4 inline-block font-semibold">
-              View all service areas
+              View all Houston service areas &rarr;
             </Link>
           </div>
           <div className="card p-6 sm:p-8">
             <h3 className="font-serif text-xl font-semibold text-pine">Not sure you&apos;re covered?</h3>
-            <p className="mt-2 text-pine/70">Enter your ZIP — it takes five seconds.</p>
+            <p className="mt-2 text-pine/70">Enter your ZIP — instant verification across all 1,200+ cities.</p>
             <div className="mt-4">
               <ZipChecker />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 1,000+ Popular Cities Nationwide Coverage */}
+      <section className="border-t border-line bg-paper py-16">
+        <div className="container-x">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="eyebrow">Nationwide Coverage</p>
+              <h2 className="mt-1 font-serif text-3xl font-semibold text-pine">
+                1,200+ Popular Cities Across 43 States
+              </h2>
+              <p className="mt-2 max-w-2xl text-pine/75">
+                Local certified water mitigation specialists standing by 24/7.
+                Click on any popular metropolitan city below or browse our complete 43-state directory.
+              </p>
+            </div>
+            <Link href={routes.locations()} className="btn-secondary shrink-0">
+              Browse All 1,200+ Cities &amp; States &rarr;
+            </Link>
+          </div>
+
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            {POPULAR_METROS.map((city) => (
+              <Link
+                key={city.slug}
+                href={`/locations/${city.stateSlug}/${city.slug}/`}
+                className="group flex items-center justify-between rounded-xl border border-line bg-white p-3.5 shadow-xs transition hover:border-lagoon hover:shadow-md"
+              >
+                <div>
+                  <span className="block font-semibold text-pine group-hover:text-lagoon-deep">
+                    {city.name}
+                  </span>
+                  <span className="text-xs text-pine/50">{city.state} · 24/7 Active</span>
+                </div>
+                <IconArrowRight className="h-4 w-4 text-pine/30 transition group-hover:translate-x-1 group-hover:text-lagoon-deep" />
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-pine p-6 text-white">
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coral font-serif text-xl font-bold">
+                43
+              </div>
+              <div>
+                <h3 className="font-serif text-lg font-semibold">
+                  States With Active Contractor Coverage
+                </h3>
+                <p className="text-sm text-white/75">
+                  Over 1,200 cities, 35,000+ ZIP codes covered for emergency water extraction, flood damage, and mold drying.
+                </p>
+              </div>
+            </div>
+            <Link href={routes.locations()} className="btn-primary shrink-0 !min-h-[44px]">
+              Explore Complete Coverage Map
+            </Link>
           </div>
         </div>
       </section>
