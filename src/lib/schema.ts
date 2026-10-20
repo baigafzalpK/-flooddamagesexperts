@@ -14,7 +14,7 @@ const orgId = `${SITE_URL}/#organization`;
 const websiteId = `${SITE_URL}/#website`;
 
 function isPlaceholderPhone(): boolean {
-  return !process.env.NEXT_PUBLIC_BUSINESS_PHONE;
+  return site.phoneE164.includes("5550148");
 }
 
 export function siteGraph(cities: City[], services: Service[]) {

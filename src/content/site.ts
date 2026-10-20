@@ -12,8 +12,8 @@ export const site = {
   tagline: "Fast, honest water & flood damage restoration across 1,200+ cities nationwide.",
   market: "Nationwide & Regional Hubs",
   stateAbbr: "TX",
-  phoneDisplay: process.env.NEXT_PUBLIC_BUSINESS_PHONE || "(713) 555-0148",
-  phoneE164: process.env.NEXT_PUBLIC_BUSINESS_PHONE_E164 || "+17135550148",
+  phoneDisplay: process.env.NEXT_PUBLIC_BUSINESS_PHONE || "(877) 221-0664",
+  phoneE164: process.env.NEXT_PUBLIC_BUSINESS_PHONE_E164 || "+18772210664",
   email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || "contact@flooddamagesexperts.com",
   hours: process.env.NEXT_PUBLIC_BUSINESS_HOURS || "24/7 Emergency Response",
   license: process.env.NEXT_PUBLIC_LICENSE_NUMBER || "",
@@ -33,4 +33,4 @@ export const DISCLOSURE =
   "By requesting help, you agree your details may be shared with up to three contractors.";
 
 export const TEMP_PHONE_NOTE =
-  "Temporary placeholder number — replace with the LeadSmart number before launch.";
+  "Official Ringba / LeadSmart tracking number live.";
