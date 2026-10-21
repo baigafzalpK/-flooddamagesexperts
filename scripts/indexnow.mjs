@@ -22,7 +22,7 @@ if (!KEY) {
 
 const BASE = (
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://brushwellpainting.com"
+  "https://flooddamagesexperts.com"
 ).replace(/\/$/, "");
 const HOST = new URL(BASE).host;
 
